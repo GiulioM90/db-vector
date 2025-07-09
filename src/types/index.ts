@@ -1,0 +1,1 @@
+// TODO: Definire tipi TypeScript
