@@ -40,7 +40,7 @@ const client = createClient({
 ```bash
 # Clone repository
 git clone https://github.com/giuliomollo/db-vector.git
-cd vectorizer
+cd db-vector
 
 # Install dependencies
 npm install
@@ -109,7 +109,7 @@ npm publish --tag beta
 ## Project Structure
 
 ```
-vectorizer/
+db-vector/
 ├── src/
 │   ├── clients/          # Clients for various providers
 │   ├── chunking/         # Chunking functionality
