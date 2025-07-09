@@ -1,2 +1,2 @@
-// TODO: Implementare funzionalità di chunking
+// TODO: Implement chunking functionality
 export {};
