@@ -1,4 +1,4 @@
-# Vectorizer
+# DB-VECTOR
 
 Unified client for cloud vector databases with chunking and update functionality.
 
@@ -19,7 +19,7 @@ npm install vectorizer
 ## Basic Usage
 
 ```typescript
-import { createClient, upsertDocuments } from 'vectorizer';
+import { createClient, upsertDocuments } from 'db-vector';
 
 // Create client
 const client = createClient({
@@ -39,7 +39,7 @@ const client = createClient({
 
 ```bash
 # Clone repository
-git clone https://github.com/giuliomollo/vectorizer.git
+git clone https://github.com/giuliomollo/db-vector.git
 cd vectorizer
 
 # Install dependencies

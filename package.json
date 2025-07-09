@@ -25,12 +25,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/giuliomollo/vectorizer.git"
+    "url": "git+https://github.com/giuliomollo/db-vector.git"
   },
   "bugs": {
-    "url": "https://github.com/giuliomollo/vectorizer/issues"
+    "url": "https://github.com/giuliomollo/db-vector/issues"
   },
-  "homepage": "https://github.com/giuliomollo/vectorizer#readme",
+  "homepage": "https://github.com/giuliomollo/db-vector#readme",
   "files": [
     "dist",
     "README.md",
