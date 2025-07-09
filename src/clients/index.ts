@@ -1,2 +1,2 @@
-// TODO: Implementare client per database vettoriali
+// TODO: Implement vector database clients
 export {};

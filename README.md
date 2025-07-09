@@ -1,129 +1,129 @@
 # Vectorizer
 
-Client unificato per database vettoriali cloud con funzionalità di chunking e aggiornamento.
+Unified client for cloud vector databases with chunking and update functionality.
 
-## Caratteristiche
+## Features
 
-- 🔌 Client per Pinecone e MongoDB Vector Search
-- ✂️ Funzionalità di chunking avanzate
-- 🔄 Aggiornamento automatico dei database vettoriali
-- 📦 API semplice e unificata
-- 🚀 Supporto TypeScript
+- 🔌 Clients for Different Vector Search (Pinecone for now)
+- ✂️ Advanced chunking functionality
+- 🔄 Automatic vector database updates
+- 📦 Simple and unified API
+- 🚀 TypeScript support
 
-## Installazione
+## Installation
 
 ```bash
 npm install vectorizer
 ```
 
-## Uso Base
+## Basic Usage
 
 ```typescript
-import { VectorizerClient } from 'vectorizer';
+import { createClient, upsertDocuments } from 'vectorizer';
 
-// Configurazione client
-const client = new VectorizerClient({
-  provider: 'pinecone', // o 'mongodb'
+// Create client
+const client = createClient({
+  provider: 'pinecone', // or 'mongodb'
   config: {
-    // configurazione specifica del provider
+    // provider-specific configuration
   }
 });
 
-// Esempio di utilizzo (da implementare)
-// await client.upsert(documents);
+// Usage example (to be implemented)
+// await upsertDocuments(client, documents);
 ```
 
-## Sviluppo
+## Development
 
 ### Setup
 
 ```bash
-# Clona il repository
+# Clone repository
 git clone https://github.com/giuliomollo/vectorizer.git
 cd vectorizer
 
-# Installa dipendenze
+# Install dependencies
 npm install
 
-# Build del progetto
+# Build project
 npm run build
 ```
 
-### Comandi Disponibili
+### Available Commands
 
 ```bash
-# Sviluppo con watch mode
+# Development with watch mode
 npm run dev
 
-# Build di produzione
+# Production build
 npm run build
 
-# Esegui test
+# Run tests
 npm run test
 
 # Linting
 npm run lint
 
-# Pulizia build
+# Clean build
 npm run clean
 ```
 
-## Pubblicazione
+## Publishing
 
-### Prima pubblicazione
+### First publication
 
 ```bash
-# 1. Assicurati di essere loggato su npm
+# 1. Make sure you're logged in to npm
 npm login
 
-# 2. Verifica la configurazione
+# 2. Verify configuration
 npm config list
 
-# 3. Build del progetto
+# 3. Build project
 npm run build
 
-# 4. Pubblica (prepublishOnly eseguirà automaticamente il build)
+# 4. Publish (prepublishOnly will automatically run build)
 npm publish
 ```
 
-### Aggiornamenti
+### Updates
 
 ```bash
-# Aggiorna la versione (patch/minor/major)
+# Update version (patch/minor/major)
 npm version patch  # 1.0.0 -> 1.0.1
 npm version minor  # 1.0.0 -> 1.1.0
 npm version major  # 1.0.0 -> 2.0.0
 
-# Pubblica la nuova versione
+# Publish new version
 npm publish
 ```
 
-### Pubblicazione Beta
+### Beta Publishing
 
 ```bash
-# Per versioni beta/alpha
+# For beta/alpha versions
 npm version prerelease --preid=beta
 npm publish --tag beta
 ```
 
-## Struttura del Progetto
+## Project Structure
 
 ```
 vectorizer/
 ├── src/
-│   ├── clients/          # Client per i vari provider
-│   ├── chunking/         # Funzionalità di chunking
-│   ├── types/           # Definizioni TypeScript
-│   └── index.ts         # Entry point principale
+│   ├── clients/          # Clients for various providers
+│   ├── chunking/         # Chunking functionality
+│   ├── types/           # TypeScript definitions
+│   └── index.ts         # Main entry point
 ├── dist/                # Build output
 ├── tests/               # Test suite
-└── docs/                # Documentazione
+└── docs/                # Documentation
 ```
 
-## Licenza
+## License
 
 MIT
 
-## Contributi
+## Contributing
 
-I contributi sono benvenuti! Apri una issue o una pull request.
+Contributions are welcome! Open an issue or pull request.

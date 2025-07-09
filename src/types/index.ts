@@ -1,2 +1,2 @@
-// TODO: Definire tipi TypeScript
+// TODO: Define TypeScript types
 export {};

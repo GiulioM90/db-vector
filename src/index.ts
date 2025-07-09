@@ -2,15 +2,15 @@ export * from './clients';
 export * from './chunking';
 export * from './types';
 
-// Funzioni principali del vectorizer
+// Main vectorizer functions
 export function createClient(config: any) {
-  // TODO: Implementare creazione client
+  // TODO: Implement client creation
 }
 
 export function upsertDocuments(client: any, documents: any[]) {
-  // TODO: Implementare upsert
+  // TODO: Implement upsert
 }
 
 export function searchVectors(client: any, query: any) {
-  // TODO: Implementare ricerca
+  // TODO: Implement search
 }
