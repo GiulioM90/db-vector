@@ -1,0 +1,54 @@
+{
+  "name": "vectorizer",
+  "version": "0.0.0",
+  "description": "Client adapters for vectorial db's with utils",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "vector",
+    "database",
+    "pinecone",
+    "mongodb",
+    "chunking",
+    "embedding",
+    "ai"
+  ],
+  "author": "Giulio Mollo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giuliomollo/vectorizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/giuliomollo/vectorizer/issues"
+  },
+  "homepage": "https://github.com/giuliomollo/vectorizer#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^2.0.0",
+    "mongodb": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
