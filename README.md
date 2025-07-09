@@ -13,7 +13,7 @@ Unified client for cloud vector databases with chunking and update functionality
 ## Installation
 
 ```bash
-npm install vectorizer
+npm install db-vector
 ```
 
 ## Basic Usage
