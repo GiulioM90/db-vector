@@ -1,5 +1,5 @@
 {
-  "name": "vectorizer",
+  "name": "db-vector",
   "version": "0.1.4",
   "description": "Client adapters for vectorial db's with utils",
   "main": "dist/index.js",
