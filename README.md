@@ -4,10 +4,10 @@ Unified client for cloud vector databases with chunking and update functionality
 
 ## Features
 
-- 🔌 Clients for Different Vector Search (Pinecone for now)
-- ✂️ Advanced chunking functionality
-- 🔄 Automatic vector database updates
-- 📦 Simple and unified API
+- 🔌 Clients for Different Vector Search (Pinecone || MongoDB for now)
+- ✂️ Advanced chunking functionality (wip)
+- 🔄 Automatic vector database updates (wip)
+- 📦 Simple and unified API (wip)
 - 🚀 TypeScript support
 
 ## Installation
@@ -21,7 +21,8 @@ npm install db-vector
 ```typescript
 import { createClient, upsertDocuments } from 'db-vector';
 
-// Create client
+// Create Client
+
 const client = createClient({
   provider: 'pinecone',
   apiKey: 'API_KEY',
@@ -40,78 +41,6 @@ const client = createClient({
 // await upsertDocuments(client, documents);
 ```
 
-## Development
-
-### Setup
-
-```bash
-# Clone repository
-git clone https://github.com/GiulioM90/db-vector.git
-cd db-vector
-
-# Install dependencies
-npm install
-
-# Build project
-npm run build
-```
-
-### Available Commands
-
-```bash
-# Development with watch mode
-npm run dev
-
-# Production build
-npm run build
-
-# Run tests
-npm run test
-
-# Linting
-npm run lint
-
-# Clean build
-npm run clean
-```
-
-## Publishing
-
-### First publication
-
-```bash
-# 1. Make sure you're logged in to npm
-npm login
-
-# 2. Verify configuration
-npm config list
-
-# 3. Build project
-npm run build
-
-# 4. Publish (prepublishOnly will automatically run build)
-npm publish
-```
-
-### Updates
-
-```bash
-# Update version (patch/minor/major)
-npm version patch  # 1.0.0 -> 1.0.1
-npm version minor  # 1.0.0 -> 1.1.0
-npm version major  # 1.0.0 -> 2.0.0
-
-# Publish new version
-npm publish
-```
-
-### Beta Publishing
-
-```bash
-# For beta/alpha versions
-npm version prerelease --preid=beta
-npm publish --tag beta
-```
 
 ## Project Structure
 
