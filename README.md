@@ -24,6 +24,7 @@ import { createClient, upsertDocuments } from 'db-vector';
 // Create client
 const client = createClient({
   provider: 'pinecone', // or 'mongodb'
+  apiKey: 'API_KEY',
   config: {
     // provider-specific configuration
   }
