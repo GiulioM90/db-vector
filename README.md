@@ -39,7 +39,7 @@ const client = createClient({
 
 ```bash
 # Clone repository
-git clone https://github.com/giuliomollo/db-vector.git
+git clone https://github.com/GiulioM90/db-vector.git
 cd db-vector
 
 # Install dependencies
