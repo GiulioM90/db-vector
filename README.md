@@ -23,14 +23,20 @@ import { createClient, upsertDocuments } from 'db-vector';
 
 // Create client
 const client = createClient({
-  provider: 'pinecone', // or 'mongodb'
+  provider: 'pinecone',
   apiKey: 'API_KEY',
   config: {
     // provider-specific configuration
   }
 });
 
-// Usage example (to be implemented)
+const client = createClient({
+  provider: 'mongodb',
+  connectionString: 'CONNECTION_STRING',
+  config: {
+    // provider-specific configuration
+  }
+});
 // await upsertDocuments(client, documents);
 ```
 
