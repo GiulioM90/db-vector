@@ -2,10 +2,8 @@ export * from './clients';
 export * from './chunking';
 export * from './types';
 
-// Main vectorizer functions
-export function createClient(config: any) {
-  // TODO: Implement client creation
-}
+// Re-export createClient from clients module
+export { createClient } from './clients';
 
 export function upsertDocuments(client: any, documents: any[]) {
   // TODO: Implement upsert
