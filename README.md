@@ -40,7 +40,7 @@ const client = createClient({
 });
 // await upsertDocuments(client, documents);
 
-const docs = loadFolder('/documents')
+const docs = await loadFolder('/documents')
 
 ```
 
