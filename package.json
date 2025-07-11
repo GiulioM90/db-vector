@@ -45,7 +45,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@langchain/community": "^0.3.48",
     "@pinecone-database/pinecone": "^2.0.0",
+    "langchain": "^0.3.29",
     "mongodb": "^6.0.0"
   },
   "engines": {

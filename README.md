@@ -19,7 +19,7 @@ npm install db-vector
 ## Basic Usage
 
 ```typescript
-import { createClient, upsertDocuments } from 'db-vector';
+import { createClient, loadFolder } from 'db-vector';
 
 // Create Client
 
@@ -39,8 +39,10 @@ const client = createClient({
   }
 });
 // await upsertDocuments(client, documents);
-```
 
+const docs = loadFolder('/documents')
+
+```
 
 ## Project Structure
 
@@ -48,6 +50,7 @@ const client = createClient({
 db-vector/
 ├── src/
 │   ├── clients/          # Clients for various providers
+│   ├── lib/              # utils
 │   ├── chunking/         # Chunking functionality
 │   ├── types/           # TypeScript definitions
 │   └── index.ts         # Main entry point
