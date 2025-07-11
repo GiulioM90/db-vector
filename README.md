@@ -38,9 +38,16 @@ const client = createClient({
     // provider-specific configuration
   }
 });
-// await upsertDocuments(client, documents);
 
+// Load docs from folder
 const docs = await loadFolder('/documents')
+
+// process and upsert documents
+
+  await processDocument(client, indexname, namespace, doc, {
+    batchSize: batchsize,
+    onProgress: progressCallback
+  })
 
 ```
 

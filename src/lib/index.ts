@@ -1,3 +1,4 @@
 import { loadFolder } from './loadFolder'
+import { processDocument } from './processDocument'
 
-export { loadFolder }
+export { loadFolder, processDocument  }
