@@ -1,4 +1,5 @@
 import { loadFolder } from './loadFolder'
 import { processDocument } from './processDocument'
+import { createExtractor } from './createExtractor'
 
-export { loadFolder, processDocument  }
+export { loadFolder, processDocument, createExtractor }

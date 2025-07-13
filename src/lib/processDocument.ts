@@ -2,6 +2,7 @@ import { pipeline, FeatureExtractionPipeline } from "@huggingface/transformers";
 import { PineconeRecord, RecordMetadata } from "@pinecone-database/pinecone";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { Document } from "langchain/document";
+import { createExtractor } from './createExtractor'
 
 export interface ProcessorConfig {
   batchSize?: number;
@@ -29,7 +30,7 @@ export async function processDocument(
 ): Promise<ProcessorState> {
   const finalConfig = { ...defaultConfig, ...config };
   
-  const extractor = await pipeline('feature-extraction', finalConfig.modelName);
+  const extractor = await createExtractor(finalConfig.modelName);
   const splitter = new RecursiveCharacterTextSplitter();
   const documentChunks = await splitter.splitText(doc.pageContent);
   

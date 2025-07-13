@@ -19,7 +19,8 @@
     "mongodb",
     "chunking",
     "embedding",
-    "ai"
+    "ai",
+    "db-vector"
   ],
   "author": "Giulio Mollo",
   "license": "MIT",
