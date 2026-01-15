@@ -1,6 +1,6 @@
 {
   "name": "db-vector",
-  "version": "0.5.3-beta.2",
+  "version": "0.5.3",
   "description": "Client adapters for vector databases with utilities",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
