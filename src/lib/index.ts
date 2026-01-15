@@ -1,5 +1,4 @@
-import { loadFolder } from './loadFolder'
-import { processDocument } from './processDocument'
-import { createExtractor } from './createExtractor'
-
-export { loadFolder, processDocument, createExtractor }
+export { loadFolder } from './loadFolder';
+export { processDocument } from './processDocument';
+export { createExtractor } from './createExtractor';
+export { clearModelCache } from './clearModelCache';
