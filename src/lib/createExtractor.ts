@@ -16,10 +16,11 @@ export const createExtractor = async (
   modelName: string,
   forceReload: boolean = false
 ): Promise<FeatureExtractionPipeline> => {
-  if (forceReload) {
-    env.allowLocalModels = false;
-    env.allowRemoteModels = true;
-  }
+  // Disable local models to always download fresh from HuggingFace
+  env.allowLocalModels = false;
+  env.allowRemoteModels = true;
+  env.useBrowserCache = false;
+  
   return await pipeline('feature-extraction', modelName, {
     revision: 'main'
   });
